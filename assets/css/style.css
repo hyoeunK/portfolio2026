@@ -73,7 +73,7 @@ h2 {
 h1 {
   max-width: 14ch;
   font-size: clamp(4.6rem, 9vw, 8.8rem);
-  line-height: 1.01;
+  line-height: 1.06;
 }
 
 .header-kicker {
