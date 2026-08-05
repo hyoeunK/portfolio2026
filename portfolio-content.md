@@ -45,35 +45,10 @@
 
 ### Career Summary
 
-- Years of experience: [X years]
+- Years of experience: [5years]
 - Current / recent focus: [consumer, growth, platform, etc.]
 - Strengths: problem definition, systems thinking, end-to-end execution, cross-functional collaboration
 
-### Experience Highlights
-
-#### Role 1
-
-- Company:
-- Title:
-- Dates:
-- Scope:
-- Key outcomes:
-
-#### Role 2
-
-- Company:
-- Title:
-- Dates:
-- Scope:
-- Key outcomes:
-
-#### Role 3
-
-- Company:
-- Title:
-- Dates:
-- Scope:
-- Key outcomes:
 
 ### Core Strengths
 
@@ -83,12 +58,6 @@
 - Systems thinking across flows and surfaces
 - Cross-functional collaboration with PM, engineering, and leadership
 
-### Tools / Working Style
-
-- Tools:
-- Collaboration style:
-- Process preferences:
-
 ## Projects Tab
 
 ### Projects Intro
@@ -97,103 +66,165 @@
 
 ### Project List
 
-- Project 1: [Title]
-- Project 2: [Title or omit if only one project]
+- Project 1: [Meta Horizon Worlds - Parental Supervision]
+- Project 2: [VR Cloud Gaming Experience]
 
 ## Project 1
 
 ### Project Snapshot
 
-- Title:
-- One-line summary:
-- Company / context:
-- Timeline:
-- Role:
-- Team:
-- Status: NDA / public / partially anonymized
+- Title: Meta Horizon Worlds Preteen Account & Parental Supervision UX Design
+- One-line summary: Designed a safer social VR experience for preteens, paired with parental supervision tools that helped guardians stay informed while supporting an age-appropriate experience.
+- Company / context: Meta Horizon Worlds
+- Timeline: 1 year
+- Role: Product Designer
+- Team: Horizon Worlds Youth
+- Status: Reconstructed from public materials
 
 ### Why This Project Matters
 
-- Why this project is a strong representation of your senior-level thinking:
+- Why this project is a strong representation of your thinking:
+  It shows how you approached a high-risk, ambiguous design space where safety, trust, platform health, and user autonomy all had to be balanced at once.
 - Why it is relevant for consumer or growth roles:
+  It demonstrates product thinking in a complex consumer ecosystem, including onboarding, permissions, trust-building, and long-term engagement guardrails.
 
 ### Context
 
 - What product or business area this was in:
+  Age-appropriate social VR experiences for preteens within Meta Quest and Meta Horizon Worlds.
 - What was happening in the company or team at the time:
+  Meta Quest needed age-appropriate tools, content, and protections for younger users entering immersive social spaces, including play, exploration, creation, events, and friend-based social experiences.
 - Why this work mattered:
+  Preteen safety was not only a policy requirement but also a product trust issue. The experience needed to help families use the platform safely through clearer defaults, protections, and parent-managed controls.
 
 ### Problem
 
 - What problem existed:
+  Existing social VR patterns were not designed with preteen supervision, age-appropriate protections, or guardian visibility in mind.
 - Why it was difficult or ambiguous:
+  For preteens, immersive social features carried heightened risk: unfamiliar people, voice chat, virtual proximity, embodied interaction, and potential exposure to inappropriate content.
 - What was not yet clear:
+  It was not obvious what level of supervision would build trust without making the experience feel restrictive, punitive, or overly complicated.
+
+### Challenge
+
+- The core challenge:
+  Design safety UX that balanced preteen agency, parent trust, and platform enjoyment without turning supervision into simple monitoring or blunt restriction.
+- Why this was hard:
+  The work needed to preserve the fun of games, exploration, creation, events, and social connection while making risks legible and manageable for families.
+
+### Design Strategy
+
+- 1. Design age-appropriate defaults instead of simply adding restrictions. Adults, teens, and preteens needed different onboarding, permissions, and protection models that built trust from the start.
+- 2. Turn access blocks into role transitions. The approval flow connected the preteen's VR screen, parent notification, review details, and Family Center into one cross-surface request loop.
+- 3. Redesign safety for spatial and voice-based interaction. VR required guardrails for garbled voice, personal boundaries, hidden status/location, and known-people-first discovery.
+- 4. Combine content ratings, child requests, and parent judgment. For UGC, ratings provided decision context so parents could make informed choices instead of relying on one-size-fits-all restrictions.
+- 5. Position Family Center as a conversation starter, not a control panel. The experience focused on decision-ready signals, usage context, approvals, and simple education instead of more surveillance.
 
 ### Goal
 
 - What success needed to look like:
+  Create a preteen account and supervision system that felt safe by default, easy to understand, and appropriate for a social VR environment.
 - Product goal:
+  Define a coherent preteen account model and parental supervision experience that could scale across app access, content access, social participation, and privacy defaults.
 - User goal:
+  Help preteens participate safely in social VR while giving parents clear visibility and confidence.
 - Business goal:
+  Strengthen trust in the platform's ability to support younger users responsibly.
 
 ### Constraints
 
-- Time constraints:
-- Technical constraints:
-- Data or research limitations:
-- Organizational constraints:
-- NDA considerations for this case study:
+- Time constraints: [Add if relevant]
+- Technical constraints: Designing for immersive and cross-surface experiences likely required coordination between VR-native interactions and supporting account-management surfaces.
+- Data or research limitations: [Add what you can share]
+- Organizational constraints: The work likely sat at the intersection of product, safety, policy, and platform teams.
+- NDA considerations for this case study: Details are intentionally simplified and reconstructed from public-facing information.
 
 ### My Role
 
 - What you owned directly:
+  Core user journey definition and UXR alignment, including request/approve flows, content ratings, notifications, and GenAI parental supervision features.
 - What you influenced:
+  The framing of how supervision should appear in the product experience, not just as a settings layer but as part of the trust model of the platform.
 - Who you collaborated with:
+  Legal, Policy, Family Center, and a three-person design team, alongside broader product and engineering partners. [Adjust as needed]
+
+### Personal Scope
+
+- Core user journey definition
+- UXR alignment
+- Request / approve flows
+- Content rating system
+- Notifications
+- GenAI parental supervision features
+- Collaboration with Legal, Policy, Family Center, and a three-person design team
 
 ### Approach
 
 #### 1. Framing
 
 - How you defined the problem:
+  You framed it as a dual-user system design challenge rather than a simple settings feature.
 - What questions you asked:
+  What should preteens be able to do by default? What visibility do parents actually need? Where should the product guide behavior versus allow independent choice?
 - What assumptions you challenged:
+  That more controls automatically create more trust, or that safety tools can be added without reshaping the core product experience.
 
 #### 2. Discovery
 
 - Research inputs:
+  Public product information, existing safety models, and platform behavior patterns. [Refine with your actual inputs]
 - Signals from data, support, or stakeholders:
+  The need for age-appropriate boundaries, transparency for guardians, and reduced confusion around supervision and permissions.
 - Key insights:
+  Parents need legibility more than volume. Preteens need guardrails that feel built into the product, not imposed as constant interruption.
 
 #### 3. Direction Setting
 
 - Options explored:
+  Different supervision models, levels of parental visibility, and where account setup and permission management should live.
 - Tradeoffs considered:
+  Safety versus autonomy, simplicity versus control depth, and immersive interaction quality versus administrative clarity.
 - Why one direction was chosen:
+  The strongest direction likely centered on clear defaults, progressive disclosure, and giving parents meaningful oversight without turning the product into a surveillance tool.
 
 #### 4. Design Execution
 
 - Flows, systems, or surfaces designed:
+  Preteen account setup, parental linking or supervision setup, permissions and controls, and trust-building UI across the broader social VR journey.
 - How the experience evolved:
+  The design likely moved from feature-level controls toward a more complete supervision system with clearer states, responsibilities, and guidance.
 - Important design decisions:
+  How supervision is introduced, how parents understand their role, how preteen experiences remain respectful, and how safety expectations are communicated inside immersive spaces.
 
 #### 5. Iteration
 
 - What changed after feedback:
+  [Add specifics if you have them]
 - What you refined and why:
+  Clarifying terminology, simplifying mental models, and reducing friction in any multi-party setup flow would be strong areas to highlight.
 
 ### Outcome
 
 - What shipped:
+  A preteen account and parental supervision experience for social VR, adapted here in anonymized form.
 - What changed for users:
+  The system made safety expectations more explicit and gave both preteens and guardians a more understandable framework for participation.
 - What changed for the business or team:
+  It established a stronger product foundation for supporting younger users in immersive social spaces.
 - Metrics, if shareable:
+  [Add if available. If not, describe directional impact only.]
 
 ### Reflection
 
 - What made this project hard:
+  It required designing for trust, not just task completion, across an emerging technology space with unclear norms and high sensitivity.
 - What you are proud of:
+  Turning a policy- and safety-heavy challenge into a product experience that could feel coherent, respectful, and usable.
 - What you would improve with more time:
+  Expand the case study with more detail on behavior edge cases, onboarding language, and longitudinal trust-building moments.
 - What this says about how you work:
+  You are strongest in spaces where the problem is not fully defined yet, where multiple stakeholders have competing needs, and where the design has to shape product direction rather than just polish screens.
 
 ### Assets Needed
 
@@ -202,6 +233,15 @@
 - Diagram / framework:
 - Optional short video:
 - Captions needed:
+
+### Related Work
+
+- Guardian Account Linking:
+  Defined how parents connect to a younger user's account and establish a clear supervision relationship.
+- Permission Management:
+  Shaped the control model for visibility, restrictions, and ongoing oversight across key social behaviors.
+- Safety Communication Patterns:
+  Explored how to communicate boundaries, state changes, and trust signals without overwhelming younger users.
 
 ## Project 2
 
