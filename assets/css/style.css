@@ -259,6 +259,29 @@ h2 {
   border-radius: calc(var(--radius) - 6px);
 }
 
+.project-video-frame {
+  width: 630px;
+  max-width: 100%;
+  justify-self: start;
+  padding: 10px;
+  background:
+    linear-gradient(135deg, rgba(31, 61, 47, 0.1), rgba(18, 18, 18, 0.02)),
+    var(--surface);
+  border: 1px solid rgba(18, 18, 18, 0.04);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.project-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  background: #050607;
+  border-radius: calc(var(--radius) - 6px);
+  object-fit: contain;
+}
+
 
 .detail-grid {
   display: grid;
@@ -283,8 +306,72 @@ h2 {
   margin-top: 36px;
 }
 
+.craft-section {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 28px;
+  padding: 28px 0 38px;
+  border-top: 1px solid rgba(18, 18, 18, 0.1);
+  border-bottom: 1px solid rgba(18, 18, 18, 0.1);
+}
+
+.craft-section + .judgment-section {
+  margin-top: 34px;
+}
+
+.craft-intro {
+  display: grid;
+  align-content: start;
+  gap: 2px;
+}
+
+.craft-intro .body-copy {
+  margin: 0;
+  color: rgba(18, 18, 18, 0.62);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.craft-list {
+  display: grid;
+  gap: 22px;
+}
+
+.craft-item {
+  display: grid;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 18px;
+  padding: 0;
+}
+
+.craft-item span {
+  color: rgba(18, 18, 18, 0.38);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.craft-item h3 {
+  margin: 0 0 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.02rem;
+  font-weight: 650;
+  line-height: 1.35;
+}
+
+.craft-item .body-copy {
+  max-width: none;
+  margin: 0;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
 .judgment-section {
   padding: 0 0 18px;
+}
+
+.judgment-section + .judgment-section {
+  margin-top: 26px;
 }
 
 .judgment-grid {
@@ -569,6 +656,7 @@ h2 {
   .intro-grid,
   .project-card,
   .detail-grid,
+  .craft-section,
   .media-strip,
   .rationale-grid,
   .judgment-grid,

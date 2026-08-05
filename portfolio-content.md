@@ -247,6 +247,64 @@
 
 ### Project Snapshot
 
+- Title: Twinning: Shared Identity as a Social Growth Loop
+- One-line summary: Designed a playful Easter-egg-like social feature for teen players who loved changing identity and customizing their look, turning shared self-expression into an in-world moment of recognition and connection.
+- Company / context: Meta Horizon Worlds / Social growth
+- Role: Product Designer
+- Status: Launched with nameplate sticker matching; outfit-based matching was planned as a later milestone.
+- Primary asset: assets/images/projects/twin_review.mp4
+
+### Positioning
+
+- This project should be presented as an impact case, not a visual-output case.
+- The value is in showing how a small social affordance can create measurable connection behavior.
+- Core strength: turning identity expression into a social recognition loop.
+- Craft strength: prototype-heavy spatial interaction design using Unity to tune timing, visibility, icon placement, and effect intensity.
+- Discord relevance: social discovery, friend connection, lightweight delight, and retention-linked relationship building.
+
+### Context
+
+- Teen players could express identity through nameplate stickers, but those self-expression moments were mostly individual.
+- The opportunity was to make shared identity visible when two people met in the same world.
+- The first milestone focused on matching nameplate stickers; a later milestone explored matching outfits as a richer social signal.
+
+### Insight
+
+- Matching identity cues can create a tiny social spark: an excuse to notice someone, react, and start a lightweight interaction without needing a full conversation first.
+- This mattered because following relationships were strongly linked to product retention.
+
+### Design Approach
+
+- Frame Twinning as a scalable recognition system, not a one-off visual effect.
+- Launch with nameplate sticker matching to validate the social behavior quickly.
+- Keep the interaction model extensible for future outfit-based matching.
+- The work became prototype-heavy because the interaction depended on timing, distance, visibility, and how the effect appeared around moving players in VR.
+- Make the effect noticeable enough to create delight, but lightweight enough not to interrupt the world experience.
+
+### Prototyping & Spatial Design
+
+- Built Unity prototypes to test when the effect should trigger, how long it should last, and which viewing angles made it catch peripheral attention in VR.
+- Tested how the effect looked to nearby players so it felt fun and noticeable without interrupting movement, conversation, or ongoing play.
+- Explored larger group effects for moments when multiple players matched, turning a one-to-one recognition moment into shared group celebration.
+- Iterated on overhead icon placement, visual contrast, and background separation so the signal stayed readable across busy worlds and avatar positions.
+
+### Impact
+
+- After launch, friend adds between users who encountered each other through Twinning increased by nearly 20%.
+- Because following relationships were strongly linked to retention, the feature became a meaningful social growth lever.
+
+### What This Shows
+
+- Ability to turn self-expression into social signals
+- Social growth thinking tied to retention
+- Prototype-heavy spatial interaction craft
+- Lightweight interaction design with measurable impact
+- 0-to-1 scoping across launch milestone and future system direction
+
+## Project 3
+
+### Project Snapshot
+
 - Title: UGC Video Player for World Creation
 - One-line summary: A decision-focused design project about turning an ambiguous creator-tool problem into scoped product choices.
 - Company / context: Meta Horizon Worlds / World Creation
