@@ -245,10 +245,73 @@
 
 ## Project 2
 
-### Use This Only If Needed
+### Project Snapshot
 
-- Repeat the same structure as Project 1.
-- If NDA limits are strong, it is better to make one case study excellent than to stretch into a weaker second one.
+- Title: UGC Video Player for World Creation
+- One-line summary: A decision-focused design project about turning an ambiguous creator-tool problem into scoped product choices.
+- Company / context: Meta Horizon Worlds / World Creation
+- Role: Product Designer
+- Status: Design thinking and tradeoff analysis; limited final UI output
+
+### Positioning
+
+- This project should be presented as a decision case, not a visual-output case.
+- The value is in clarifying product tradeoffs under uncertainty: creator flexibility, visitor viewing quality, MVP scope, and technical feasibility.
+- Core strength: structuring ambiguity into options, then separating creator freedom from visitor experience before recommending a launch path.
+- MVP framing: the recommendation was designed as a learning system, not a launch shortcut.
+- Product judgment: balance control and predictability in a VR creator-tool environment where more flexibility can also create discoverability, ownership, and permission complexity.
+
+### Context
+
+- World creators needed a way to place UGC video inside their worlds.
+- The goal was not just to add a TV-like screen, but to make video a flexible screen object creators could scale, reshape, and use creatively as a phone, tablet, billboard, or spatial prop.
+- In VR, video is not just a flat media component. Scale, aspect ratio, controls, permissions, and placement all shape how a world feels.
+
+### Challenge
+
+- Decide what should be flexible for creators, what should stay predictable for visitors, and what should wait until real usage could inform the next iteration.
+
+### Design Judgment
+
+- Structured ambiguity into options:
+  Broke an open-ended creator-tool problem into concrete decisions around screen scale, control model, permissions, and launch sequencing.
+- Separated creator freedom from visitor quality:
+  Evaluated flexibility and predictability as different constraints, so the MVP could protect viewing quality without closing off future creative use.
+- Designed MVP as a learning system:
+  Created a stable launch baseline that could reveal how creators actually placed and used video in worlds.
+- Balanced control with predictability:
+  Framed control as a spectrum where more creative power requires stronger discoverability, ownership, and permission logic.
+
+### Tradeoff Analysis 01 / Video Screen Scale
+
+- Fixed Aspect Ratio:
+  Stable and predictable for visitors, with a consistent look across worlds. Tradeoff: less flexible for creators and narrower support for varied video formats.
+- Freeform:
+  Lets creators treat video as a world-building object, scaling it into billboards, phones, stage screens, or ambient displays. Tradeoff: shifts quality control to creators, increasing testing around legibility, distortion, viewing distance, and inconsistent playback surfaces.
+- Auto Adjustment:
+  Adapts the video surface to source format and viewing context, supporting landscape clips, vertical video, and spatial placements more gracefully. Tradeoff: requires stronger rules for resizing, cropping, controls, and world-layout collisions, making it harder to validate as an MVP default.
+
+### Tradeoff Analysis 02 / Control Model
+
+- Persistent Panel:
+  Anchors core playback controls and state near the video object, making control availability consistent across worlds. Tradeoff: less immersive and less expressive for creators, but lowers learnability and support risk for first release.
+- Raycast:
+  Lets visitors point directly at the video surface, reducing persistent UI and feeling closer to native VR interaction. Tradeoff: discoverability depends on distance, angle, scene clutter, and user intent, which can make playback feel unreliable.
+- Remote Panel:
+  Gives creators a separate control surface for setup, moderation, or live-event playback without crowding the video object. Tradeoff: introduces harder questions around who sees the panel, who has authority, and how changes are communicated to visitors.
+
+### Recommendation
+
+- Use fixed aspect ratio as the launch baseline to protect visitor viewing quality, then learn where creators actually need flexibility before expanding screen formats.
+- Use persistent controls to make playback state and permissions legible at launch, then revisit raycast or remote controls once creator roles, ownership, and visitor feedback loops are clearer.
+- Treat MVP as a learning system: stable enough to ship, specific enough to generate useful evidence, and flexible enough to guide the next iteration.
+
+### What This Shows
+
+- Product judgment under uncertainty
+- Ability to structure ambiguity into comparable options
+- Creator-tool thinking across freedom, control, and predictability
+- MVP scoping as a launch-and-learn system
 
 ## Writing Notes
 

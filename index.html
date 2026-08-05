@@ -78,7 +78,7 @@
               </div>
             </article>
 
-            <section class="detail-grid project-subsection project-subsection-tight">
+            <section class="detail-grid project-subsection project-subsection-roomy">
               <div>
                 <p class="subsection-label">Context</p>
                 <p class="body-copy">
@@ -236,33 +236,227 @@
           </section>
 
           <section class="project-block project-block-secondary">
-            <article class="project-card project-card-secondary">
+            <article class="project-card">
               <div class="project-meta">
                 <p class="project-kicker">Project 02</p>
                 <ul>
-                  <li>Growth</li>
-                  <li>Cross-functional</li>
-                  <li>NDA-friendly</li>
+                  <li>Creator Tools</li>
+                  <li>World Creation</li>
+                  <li>MVP Tradeoffs</li>
                 </ul>
               </div>
               <div class="project-content">
-                <h2>Optional second project for breadth, if needed.</h2>
+                <h2>UGC Video Player for World Creation</h2>
                 <p class="body-copy">
-                  If you decide to keep only one project, this section can be
-                  removed. If you keep two, the second should show a distinct type
-                  of problem or product area.
+                  A decision-focused design project about turning an ambiguous
+                  creator-tool problem into scoped product choices. I separated
+                  creator freedom from visitor experience, then framed the MVP
+                  as a learning system rather than a launch shortcut.
                 </p>
                 <button
-                  class="project-image"
+                  class="project-image project-image-large"
                   type="button"
                   data-lightbox-trigger
-                  data-lightbox-title="Secondary Project Placeholder"
-                  data-lightbox-caption="Placeholder for a second case study preview."
+                  data-lightbox-title="UGC Video Player Tradeoff Framework"
+                  data-lightbox-caption="AI-generated concept image illustrating UGC video placement in a creator-built VR world."
+                  data-lightbox-image="assets/images/projects/video.png"
                 >
-                  <span>Secondary project placeholder</span>
+                  <img
+                    src="assets/images/projects/video.png"
+                    alt="AI-generated concept image of UGC video placement in a VR world"
+                    class="project-image-asset"
+                  />
                 </button>
+                <p class="media-note media-note-inline">
+                  AI-generated concept image. Not Meta product imagery.
+                </p>
               </div>
             </article>
+
+            <section class="detail-grid project-subsection project-subsection-tight">
+              <div>
+                <p class="subsection-label">Context</p>
+                <p class="body-copy">
+                  World creators needed a way to place UGC video inside their
+                  worlds. The goal was not just to add a TV-like screen, but to
+                  make video a flexible screen object creators could scale,
+                  reshape, and use creatively as a phone, tablet, billboard, or
+                  spatial prop.
+                </p>
+              </div>
+              <div>
+                <p class="subsection-label">Challenge</p>
+                <p class="body-copy">
+                  Video in VR is shaped by screen scale, aspect ratio, control
+                  model, permissions, and visitor comfort. Small interaction
+                  choices could change both creator workflow and visitor
+                  experience.
+                </p>
+              </div>
+              <div>
+                <p class="subsection-label">Approach</p>
+                <p class="body-copy">
+                  I structured the ambiguity into options, then evaluated each
+                  one against two lenses: how much freedom it gave creators, and
+                  how predictable the experience stayed for visitors.
+                </p>
+              </div>
+              <div>
+                <p class="subsection-label">Recommendation</p>
+                <p class="body-copy">
+                  Ship a stable baseline—fixed aspect ratio and persistent
+                  controls—not as the safest shortcut, but as a learning system
+                  for observing real creator behavior before expanding
+                  flexibility.
+                </p>
+              </div>
+            </section>
+
+            <section class="judgment-section">
+              <p class="subsection-label">Design Judgment</p>
+              <div class="judgment-grid">
+                <article class="judgment-item">
+                  <h3>Structured ambiguity into options</h3>
+                  <p class="body-copy">
+                    I broke an open-ended creator-tool problem into concrete
+                    decisions around screen scale, control model, permissions,
+                    and launch sequencing.
+                  </p>
+                </article>
+                <article class="judgment-item">
+                  <h3>Separated creator freedom from visitor quality</h3>
+                  <p class="body-copy">
+                    I evaluated flexibility and predictability as different
+                    constraints, so the MVP could protect viewing quality
+                    without closing off future creative use.
+                  </p>
+                </article>
+                <article class="judgment-item">
+                  <h3>Designed MVP as a learning system</h3>
+                  <p class="body-copy">
+                    The recommendation created a stable launch baseline that
+                    could reveal how creators actually placed and used video in
+                    worlds.
+                  </p>
+                </article>
+                <article class="judgment-item">
+                  <h3>Balanced control with predictability</h3>
+                  <p class="body-copy">
+                    For VR creator tools, I framed control as a spectrum: more
+                    creative power needs stronger discoverability, ownership,
+                    and permission logic.
+                  </p>
+                </article>
+              </div>
+            </section>
+
+            <section class="tradeoff-section project-subsection">
+              <p class="subsection-label">Tradeoff Analysis 01 / Video Screen Scale</p>
+              <div class="tradeoff-grid">
+                <article class="tradeoff-card is-recommended">
+                  <p class="tradeoff-label">Recommended for MVP</p>
+                  <h3>Fixed Aspect Ratio</h3>
+                  <p class="body-copy">
+                    Most stable and predictable for visitors, with a consistent
+                    look across worlds.
+                  </p>
+                  <p class="tradeoff-risk">
+                    Tradeoff: less flexible for creators and narrower support
+                    for varied video formats.
+                  </p>
+                </article>
+                <article class="tradeoff-card">
+                  <p class="tradeoff-label">Creator Flexibility</p>
+                  <h3>Freeform</h3>
+                  <p class="body-copy">
+                    Lets creators treat video as a world-building object,
+                    scaling it into billboards, phones, stage screens, or
+                    ambient displays.
+                  </p>
+                  <p class="tradeoff-risk">
+                    Tradeoff: shifts quality control to creators, increasing
+                    testing around legibility, distortion, viewing distance, and
+                    inconsistent playback surfaces.
+                  </p>
+                </article>
+                <article class="tradeoff-card">
+                  <p class="tradeoff-label">Future Exploration</p>
+                  <h3>Auto Adjustment</h3>
+                  <p class="body-copy">
+                    Adapts the video surface to source format and viewing
+                    context, supporting landscape clips, vertical video, and
+                    spatial placements more gracefully.
+                  </p>
+                  <p class="tradeoff-risk">
+                    Tradeoff: requires stronger rules for resizing, cropping,
+                    controls, and world-layout collisions, making it harder to
+                    validate as an MVP default.
+                  </p>
+                </article>
+              </div>
+              <div class="decision-callout">
+                <span>Decision</span>
+                <p>
+                  Use fixed aspect ratio as the launch baseline to protect
+                  visitor viewing quality, then learn where creators actually
+                  need flexibility before expanding screen formats.
+                </p>
+              </div>
+            </section>
+
+            <section class="tradeoff-section project-subsection">
+              <p class="subsection-label">Tradeoff Analysis 02 / Control Model</p>
+              <div class="tradeoff-grid">
+                <article class="tradeoff-card is-recommended">
+                  <p class="tradeoff-label">Recommended for MVP</p>
+                  <h3>Persistent Panel</h3>
+                  <p class="body-copy">
+                    Anchors core playback controls and state near the video
+                    object, making control availability consistent across worlds.
+                  </p>
+                  <p class="tradeoff-risk">
+                    Tradeoff: less immersive and less expressive for creators,
+                    but lowers learnability and support risk for first release.
+                  </p>
+                </article>
+                <article class="tradeoff-card">
+                  <p class="tradeoff-label">Interaction Model</p>
+                  <h3>Raycast</h3>
+                  <p class="body-copy">
+                    Lets visitors point directly at the video surface, reducing
+                    persistent UI and feeling closer to native VR interaction.
+                  </p>
+                  <p class="tradeoff-risk">
+                    Tradeoff: discoverability depends on distance, angle, scene
+                    clutter, and user intent, which can make playback feel
+                    unreliable.
+                  </p>
+                </article>
+                <article class="tradeoff-card">
+                  <p class="tradeoff-label">Creator Control</p>
+                  <h3>Remote Panel</h3>
+                  <p class="body-copy">
+                    Gives creators a separate control surface for setup,
+                    moderation, or live-event playback without crowding the
+                    video object.
+                  </p>
+                  <p class="tradeoff-risk">
+                    Tradeoff: introduces harder questions around who sees the
+                    panel, who has authority, and how changes are communicated
+                    to visitors.
+                  </p>
+                </article>
+              </div>
+              <div class="decision-callout">
+                <span>Decision</span>
+                <p>
+                  Use persistent controls to make playback state and permissions
+                  legible at launch, then revisit raycast or remote controls
+                  once creator roles, ownership, and visitor feedback loops are
+                  clearer.
+                </p>
+              </div>
+            </section>
           </section>
         </section>
 
