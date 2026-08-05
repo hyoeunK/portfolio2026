@@ -41,10 +41,15 @@ a {
 
 .site-header {
   display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.9fr);
-  gap: 32px;
-  align-items: end;
-  padding: 36px 0 48px;
+  gap: 16px;
+  padding: 28px 0 52px;
+}
+
+.site-header-support {
+  display: grid;
+  gap: 16px;
+  align-items: start;
+  padding-top: 10px;
 }
 
 .eyebrow,
@@ -66,9 +71,16 @@ h2 {
 }
 
 h1 {
-  max-width: 10ch;
-  font-size: clamp(3.6rem, 8vw, 7.5rem);
-  line-height: 0.92;
+  max-width: 14ch;
+  font-size: clamp(4.6rem, 9vw, 8.8rem);
+  line-height: 1.01;
+}
+
+.header-kicker {
+  margin: 0;
+  font-size: clamp(1.05rem, 1.5vw, 1.3rem);
+  line-height: 1.45;
+  color: var(--text);
 }
 
 h2 {
@@ -87,6 +99,28 @@ h2 {
 .header-copy,
 .body-copy {
   color: var(--muted);
+}
+
+.header-copy {
+  margin: 0;
+}
+
+.header-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.header-facts span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  letter-spacing: 0.02em;
 }
 
 .tab-nav {
@@ -214,29 +248,13 @@ h2 {
   padding-bottom: 0;
 }
 
-.resume-actions {
-  padding: 8px 0 28px;
-}
-
-.resume-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 52px;
-  padding: 0 22px;
-  color: #fff;
-  text-decoration: none;
-  background: var(--accent);
-  border-radius: 999px;
-}
-
 .resume-frame {
-  padding-top: 28px;
+  padding-top: 20px;
 }
 
 .resume-frame object {
   width: 100%;
-  height: min(72vh, 980px);
+  height: min(112vh, 1400px);
   border: 1px solid rgba(18, 18, 18, 0.06);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -265,7 +283,11 @@ h2 {
   }
 
   h1 {
-    max-width: 12ch;
+    max-width: 10ch;
+  }
+
+  .site-header-support {
+    gap: 14px;
   }
 
   .project-image-large {
@@ -301,5 +323,9 @@ h2 {
   .project-image,
   .resume-frame object {
     border-radius: 18px;
+  }
+
+  .resume-frame object {
+    height: min(96vh, 1100px);
   }
 }
