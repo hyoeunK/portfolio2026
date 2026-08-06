@@ -437,6 +437,128 @@ h2 {
   min-height: auto;
 }
 
+.flow-section {
+  padding-bottom: 16px;
+}
+
+.flow-header {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.flow-header .body-copy {
+  max-width: none;
+  margin: 0;
+  color: rgba(18, 18, 18, 0.62);
+  font-size: 0.94rem;
+  line-height: 1.65;
+}
+
+.flow-header-copy {
+  max-width: none;
+}
+
+.flow-stage {
+  position: relative;
+}
+
+.flow-scroller {
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  gap: 18px;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 40px 72px 74px;
+  background: #fff;
+  border: 1px solid rgba(18, 18, 18, 0.04);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.flow-scroller::-webkit-scrollbar {
+  display: none;
+}
+
+.flow-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  color: rgba(18, 18, 18, 0.72);
+  background: rgba(255, 255, 255, 0.68);
+  border: 1px solid rgba(18, 18, 18, 0.08);
+  border-radius: 999px;
+  box-shadow: 0 10px 28px rgba(18, 18, 18, 0.08);
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.flow-arrow:disabled {
+  opacity: 0.22;
+  cursor: default;
+}
+
+.flow-arrow-prev {
+  left: 18px;
+}
+
+.flow-arrow-next {
+  right: 18px;
+}
+
+.flow-dots {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  z-index: 2;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  padding: 7px 9px;
+  background: rgba(255, 255, 255, 0.54);
+  border: 1px solid rgba(18, 18, 18, 0.06);
+  border-radius: 999px;
+  transform: translateX(-50%);
+}
+
+.flow-dot {
+  width: 6px;
+  height: 6px;
+  background: rgba(18, 18, 18, 0.22);
+  border-radius: 999px;
+  transition:
+    width 180ms ease,
+    background 180ms ease,
+    transform 180ms ease;
+}
+
+.flow-dot.is-active {
+  width: 18px;
+  background: rgba(18, 18, 18, 0.62);
+  animation: flow-dot-pulse 220ms ease;
+}
+
+.flow-phone-image {
+  flex: 0 0 auto;
+  width: auto;
+  height: 522px;
+  display: block;
+  object-fit: contain;
+  border-radius: 18px;
+}
+
+.flow-edge-spacer {
+  flex: 0 0 32px;
+}
+
 .media-note {
   margin: 0 0 64px;
   color: rgba(18, 18, 18, 0.44);
@@ -651,12 +773,23 @@ h2 {
   }
 }
 
+@keyframes flow-dot-pulse {
+  0% {
+    transform: scaleX(0.7);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
 @media (max-width: 900px) {
   .site-header,
   .intro-grid,
   .project-card,
   .detail-grid,
   .craft-section,
+  .flow-header,
   .media-strip,
   .rationale-grid,
   .judgment-grid,
@@ -675,6 +808,11 @@ h2 {
 
   .project-image-large {
     min-height: 240px;
+  }
+
+  .flow-phone-image {
+    width: auto;
+    height: min(522px, 68vh);
   }
 
   .tradeoff-card {

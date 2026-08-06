@@ -7,6 +7,7 @@ const lightboxPlaceholder = document.querySelector("[data-lightbox-placeholder]"
 const lightboxImage = document.querySelector("[data-lightbox-image-view]");
 const lightboxCloseButtons = document.querySelectorAll(".lightbox-close, .lightbox-backdrop");
 const lightboxTriggers = document.querySelectorAll("[data-lightbox-trigger]");
+const flowCarousels = document.querySelectorAll("[data-flow-carousel]");
 
 function setActiveTab(targetId) {
   tabButtons.forEach((button) => {
@@ -92,6 +93,73 @@ document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeLightbox();
   }
+});
+
+flowCarousels.forEach((carousel) => {
+  const scroller = carousel.querySelector("[data-flow-scroller]");
+  const previousButton = carousel.querySelector("[data-flow-prev]");
+  const nextButton = carousel.querySelector("[data-flow-next]");
+  const dots = Array.from(carousel.querySelectorAll("[data-flow-dot]"));
+
+  if (!scroller || !previousButton || !nextButton || !dots.length) {
+    return;
+  }
+
+  function getMaxScroll() {
+    return Math.max(0, scroller.scrollWidth - scroller.clientWidth);
+  }
+
+  function getActivePage() {
+    const maxScroll = getMaxScroll();
+
+    if (!maxScroll) {
+      return 0;
+    }
+
+    return Math.min(
+      dots.length - 1,
+      Math.max(0, Math.round((scroller.scrollLeft / maxScroll) * (dots.length - 1))),
+    );
+  }
+
+  function updateControls() {
+    const activePage = getActivePage();
+
+    previousButton.disabled = activePage === 0;
+    nextButton.disabled = activePage === dots.length - 1;
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("is-active", index === activePage);
+    });
+  }
+
+  function scrollToPage(page) {
+    const targetPage = Math.min(dots.length - 1, Math.max(0, page));
+    const scrollProgress = dots.length > 1 ? targetPage / (dots.length - 1) : 0;
+
+    scroller.scrollTo({
+      left: scrollProgress * getMaxScroll(),
+      behavior: "smooth",
+    });
+  }
+
+  previousButton.addEventListener("click", () => {
+    scrollToPage(getActivePage() - 1);
+  });
+
+  nextButton.addEventListener("click", () => {
+    scrollToPage(getActivePage() + 1);
+  });
+
+  scroller.addEventListener(
+    "scroll",
+    () => {
+      window.requestAnimationFrame(updateControls);
+    },
+    { passive: true },
+  );
+
+  window.addEventListener("resize", updateControls);
+  updateControls();
 });
 
 setActiveTab("projects");

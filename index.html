@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/style.css?v=20260805-1" />
+    <link rel="stylesheet" href="assets/css/style.css?v=20260805-10" />
   </head>
   <body>
     <div class="page-shell">
@@ -185,54 +185,65 @@
               </div>
             </section>
 
-            <section class="media-strip project-subsection" aria-label="Project supporting visuals">
-              <button
-                class="project-image"
-                type="button"
-                data-lightbox-trigger
-                data-lightbox-title="Family Center Activity Overview"
-                data-lightbox-caption="Parents can review a preteen’s recent activity, time spent, and social connections without exposing private conversations."
-                data-lightbox-image="assets/images/projects/1.png"
-              >
-                <img
-                  src="assets/images/projects/1.png"
-                  alt="Family Center activity overview for a supervised preteen account"
-                  class="project-image-asset"
-                />
-              </button>
-              <button
-                class="project-image"
-                type="button"
-                data-lightbox-trigger
-                data-lightbox-title="App Access Review"
-                data-lightbox-caption="Parents can review app details, content rating, game mode, and current access status before deciding whether a preteen can use the experience."
-                data-lightbox-image="assets/images/projects/2.png"
-              >
-                <img
-                  src="assets/images/projects/2.png"
-                  alt="App access review screen with content rating and access status"
-                  class="project-image-asset"
-                />
-              </button>
-              <button
-                class="project-image"
-                type="button"
-                data-lightbox-trigger
-                data-lightbox-title="World Access Settings"
-                data-lightbox-caption="Parents can manage which worlds are approved or blocked, using age ratings and world-level context to guide access decisions."
-                data-lightbox-image="assets/images/projects/3.png"
-              >
-                <img
-                  src="assets/images/projects/3.png"
-                  alt="World access settings showing approved ratings and approved worlds"
-                  class="project-image-asset"
-                />
-              </button>
+            <section class="flow-section project-subsection" aria-label="Mobile supervision flow" data-flow-carousel>
+              <div class="flow-header">
+                <p class="subsection-label">Mobile Supervision Flow</p>
+                <div class="flow-header-copy">
+                  <p class="body-copy">
+                    A parent-facing mobile flow for approving Meta Horizon Worlds app access, including data personalization and bulk content rating approval.
+                  </p>
+                </div>
+              </div>
+              <div class="flow-stage">
+                <button class="flow-arrow flow-arrow-prev" type="button" aria-label="Previous screen" data-flow-prev>←</button>
+                <div class="flow-scroller" data-flow-scroller tabindex="0">
+                  <span class="flow-edge-spacer" aria-hidden="true"></span>
+                  <img
+                    src="assets/images/projects/1.png?v=20260805-flow"
+                    alt="Family Center activity overview for a supervised preteen account"
+                    class="flow-phone-image"
+                  />
+                  <img
+                    src="assets/images/projects/2.png?v=20260805-flow"
+                    alt="App access review screen with content rating and access status"
+                    class="flow-phone-image"
+                  />
+                  <img
+                    src="assets/images/projects/3.png?v=20260805-flow"
+                    alt="World access settings showing approved ratings and approved worlds"
+                    class="flow-phone-image"
+                  />
+                  <img
+                    src="assets/images/projects/4.png?v=20260805-flow"
+                    alt="Mobile supervision flow screen 4"
+                    class="flow-phone-image"
+                  />
+                  <img
+                    src="assets/images/projects/5.png?v=20260805-flow"
+                    alt="Mobile supervision flow screen 5"
+                    class="flow-phone-image"
+                  />
+                  <img
+                    src="assets/images/projects/6.png?v=20260805-flow"
+                    alt="Mobile supervision flow screen 6"
+                    class="flow-phone-image"
+                  />
+                  <img
+                    src="assets/images/projects/7.png?v=20260805-flow"
+                    alt="Mobile supervision flow screen 7"
+                    class="flow-phone-image"
+                  />
+                  <span class="flow-edge-spacer" aria-hidden="true"></span>
+                </div>
+                <button class="flow-arrow flow-arrow-next" type="button" aria-label="Next screen" data-flow-next>→</button>
+                <div class="flow-dots" aria-hidden="true">
+                  <span class="flow-dot is-active" data-flow-dot></span>
+                  <span class="flow-dot" data-flow-dot></span>
+                  <span class="flow-dot" data-flow-dot></span>
+                  <span class="flow-dot" data-flow-dot></span>
+                </div>
+              </div>
             </section>
-            <p class="media-note">
-              Due to confidentiality, selected internal explorations and unreleased design directions are not shown.
-            </p>
-
           </section>
 
           <section class="project-block project-block-secondary">
@@ -666,6 +677,6 @@
       </div>
     </div>
 
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js?v=20260805-3"></script>
   </body>
 </html>
