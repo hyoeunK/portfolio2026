@@ -316,6 +316,10 @@ h2 {
   margin-top: 0;
 }
 
+.pull-after-card {
+  margin-top: -42px;
+}
+
 .project-subsection-roomy {
   margin-top: 36px;
 }
@@ -571,6 +575,24 @@ h2 {
 
 .flow-edge-spacer {
   flex: 0 0 32px;
+}
+
+.screen-carousel-section {
+  padding-bottom: 8px;
+}
+
+.screen-flow-scroller {
+  gap: 22px;
+  padding: 28px 64px 68px;
+}
+
+.screen-carousel-image {
+  flex: 0 0 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 18px;
+  box-shadow: 0 18px 44px rgba(18, 18, 18, 0.08);
 }
 
 .media-note {

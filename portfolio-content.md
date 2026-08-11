@@ -3,9 +3,9 @@
 ## Site Direction
 
 - Audience: Recruiters and design managers
-- Target role: Senior Product Designer
-- Focus areas: Consumer, growth, 0-to-1, ambiguity, problem framing
-- Portfolio strategy: Show 1-2 projects in depth rather than many surface-level projects
+- Target role: Product Designer for emerging, embodied, spatial, or robotics-adjacent products
+- Focus areas: Physical + digital systems, spatial and embodied interaction, safety and trust, rapid prototyping
+- Portfolio strategy: Lead with systems and embodied-tech relevance, then show selected projects in depth
 - Site structure: `Projects` and `Resume`
 - Default tab: `Projects`
 - Visual direction: Editorial + case-study-first, white background, black typography, modern and restrained
@@ -19,11 +19,12 @@
 
 ### Headline Options
 
-- Senior Product Designer focused on consumer products, growth, and 0-to-1 problem solving.
+- Designing through ambiguity.
+- Across VR headsets, companion apps, spatial interfaces, safety systems, and rapid prototypes for new interaction paradigms.
 
 ### Short Intro
 
-- My work often sits in ambiguous spaces where the path is not obvious yet, and I help teams turn uncertainty into structured decisions and high-quality product outcomes.
+- My work sits at the intersection of physical devices, companion apps, spatial environments, and emerging interaction paradigms. I help teams turn ambiguity into clear systems, prototypes, and product decisions.
 
 ### Contact
 
@@ -41,35 +42,109 @@
 
 ### Resume Intro
 
-- Senior Product Designer with experience across consumer and growth products, specializing in early-stage problem framing, 0-to-1 initiatives, and ambiguous problem spaces.
+- Product Designer with experience across emerging consumer platforms, specializing in physical + digital systems, spatial interaction, safety and trust, rapid prototyping, and ambiguous product spaces.
 
 ### Career Summary
 
 - Years of experience: [5years]
-- Current / recent focus: [consumer, growth, platform, etc.]
+- Current / recent focus: [emerging tech, VR, spatial products, companion apps, platform safety, growth]
 - Strengths: problem definition, systems thinking, end-to-end execution, cross-functional collaboration
 
 
 ### Core Strengths
 
+- Physical + digital systems across device, app, user, and environment
+- Spatial and embodied interaction design
+- Safety, trust, permissions, and supervision models
+- Rapid prototyping for new interaction paradigms
 - Problem definition in ambiguous spaces
-- 0-to-1 product thinking
-- Growth and consumer experience design
-- Systems thinking across flows and surfaces
-- Cross-functional collaboration with PM, engineering, and leadership
+- Cross-functional collaboration with PM, engineering, research, policy, and legal partners
 
 ## Projects Tab
 
 ### Projects Intro
 
-- Selected work focused on product thinking, problem framing, and end-to-end design execution.
+- Selected work focused on emerging and embodied technology: companion apps, spatial interaction, safety systems, social behavior, and ambiguous product tradeoffs.
 
 ### Project List
 
-- Project 1: [Meta Horizon Worlds - Parental Supervision]
-- Project 2: [VR Cloud Gaming Experience]
+- Project 1: [Meta Quest Companion App / Family Experience]
+- Project 2: [Meta Horizon Worlds - Preteen Account & Parental Supervision]
+- Project 3: [Twinning - Shared Identity as a Social Growth Loop]
+- Project 4: [UGC Video Player for World Creation]
 
 ## Project 1
+
+### Project Snapshot
+
+- Title: Meta Quest Companion App / Family Experience
+- One-line summary: Designed mobile flows within the existing Meta Quest companion app for households sharing one headset, helping family members switch accounts, share purchased apps, cast the headset view, and resolve parental approval moments with less friction.
+- Company / context: Meta Quest / Meta Horizon Worlds family companion experience
+- Role: Product Designer
+- Primary artifact: Companion app screen carousel covering main device surface, family entry points, and casting controls
+- Positioning: Family experience, multi-user UX, physical + digital system design
+- Status: Mobile design exploration within the existing companion app; not launched
+
+### Why This Project Matters
+
+- Why this project is a strong representation of your robotics-adjacent experience:
+  It shows experience designing the connective tissue between a physical device, companion app, family roles, user decisions, notifications, permissions, and an immersive environment.
+- Why it is relevant for embodied products:
+  Home robotics and family headset companion apps share a similar structure: physical device, mobile control surface, multiple users, environment, status, permissions, alerts, troubleshooting, and remote decision-making.
+
+### Context
+
+- Meta Quest is often a shared household device rather than a single-user product.
+- The companion app needed to help multiple family members understand the same headset, move between accounts, and coordinate setup or usage from mobile.
+- The experience needed to translate family relationships, device state, app access, casting, approval status, and account context into clear mobile actions.
+
+### Problem
+
+- Shared devices create friction when ownership, active user state, app access, casting, and approval status are unclear across headset and companion app surfaces.
+- The product needed one coherent shared-device model rather than disconnected settings, notifications, account states, and headset states.
+
+### Challenge
+
+- Make a one-device, many-users ecosystem feel legible and easy to hand off.
+- Avoid forcing families to understand the underlying account, device, and permission architecture.
+- Reduce the chance that younger household members would accidentally reach age-inappropriate content.
+
+### Approach
+
+- Design the companion app and headset experience as one connected system, shaped around how different family members actually use a shared device.
+- Explore a role-aware home experience:
+  Parents would see supervision, family-friendly app purchase, and casting entry points more prominently, while younger household members would see content-led surfaces such as social features, trending apps, and live video.
+- Prioritize role-aware context:
+  Families needed to understand who the current action was for, what device state it affected, and what would happen next.
+
+### Outcome
+
+- This was a vision project that shaped the team's next roadmap for family experiences.
+- I presented the direction to Meta's broader Youth and Family teams to align on how shared headset experiences could evolve across mobile and VR.
+
+### Shared-Device Design Analysis
+
+- Made account switching feel like a household handoff:
+  A shared headset needed to make the active account, role, and next action obvious so families could pass the device without accidentally exposing personal history, progress, or settings.
+- Explained shared app access across accounts:
+  App sharing introduced a subtle ownership model: purchased apps could be available to other accounts on the headset, but access still needed to feel clear, bounded, and easy to understand.
+- Used casting as a shared visibility layer:
+  Because people outside the headset cannot see what the user sees, casting became a key companion app bridge for helping, watching, troubleshooting, and participating from mobile.
+- Closed parental approval loops quickly:
+  When access required parent approval, the system needed to communicate request state, parent action, and headset impact quickly across mobile and VR surfaces.
+
+### Public Meta Product Signals
+
+- `Share Your Oculus Quest`: Meta described Quest as a shared device and introduced Multi-User Accounts and App Sharing, including multiple accounts on one headset and shared purchased apps.
+  Source: https://about.fb.com/news/2021/02/share-your-oculus-quest/
+- `Meta Quest v47 Software Update`: Meta added a mobile app widget for headset/controller battery life, Casting, app launch, and device settings, reinforcing the companion app as the remote surface for headset state and control.
+  Source: https://about.fb.com/news/2022/12/quest-v47-software-update/
+- `VR Parental Supervision Tools on Quest`: Meta described request/approval flows where a teen can ask for access and a parent can approve or deny from the Oculus mobile app.
+  Source: https://about.fb.com/news/2022/03/vr-parental-supervision-tools-on-quest/
+- `Welcoming Teens to Meta Horizon Worlds`: Meta noted that people can cast what they see in Quest so parents, guardians, or others nearby can understand and share the VR experience.
+  Source: https://about.fb.com/news/2023/04/horizon-worlds-teen-expansion-us-canada/
+
+## Project 2
 
 ### Project Snapshot
 
@@ -79,6 +154,7 @@
 - Timeline: 1 year
 - Role: Product Designer
 - Team: Horizon Worlds Youth
+- Primary artifact: Mobile supervision flow
 - Status: Reconstructed from public materials
 
 ### Why This Project Matters
@@ -93,7 +169,7 @@
 - What product or business area this was in:
   Age-appropriate social VR experiences for preteens within Meta Quest and Meta Horizon Worlds.
 - What was happening in the company or team at the time:
-  Meta Quest needed age-appropriate tools, content, and protections for younger users entering immersive social spaces, including play, exploration, creation, events, and friend-based social experiences.
+  Meta Horizon Worlds needed age-appropriate tools, content, and protections for younger users entering immersive social spaces, including play, exploration, creation, events, and friend-based social experiences.
 - Why this work mattered:
   Preteen safety was not only a policy requirement but also a product trust issue. The experience needed to help families use the platform safely through clearer defaults, protections, and parent-managed controls.
 
@@ -243,7 +319,7 @@
 - Safety Communication Patterns:
   Explored how to communicate boundaries, state changes, and trust signals without overwhelming younger users.
 
-## Project 2
+## Project 3
 
 ### Project Snapshot
 
@@ -260,7 +336,7 @@
 - The value is in showing how a small social affordance can create measurable connection behavior.
 - Core strength: turning identity expression into a social recognition loop.
 - Craft strength: prototype-heavy spatial interaction design using Unity to tune timing, visibility, icon placement, and effect intensity.
-- Discord relevance: social discovery, friend connection, lightweight delight, and retention-linked relationship building.
+- Embodied product relevance: social discovery, lightweight delight, spatial behavior, and retention-linked relationship building.
 
 ### Context
 
@@ -301,7 +377,7 @@
 - Lightweight interaction design with measurable impact
 - 0-to-1 scoping across launch milestone and future system direction
 
-## Project 3
+## Project 4
 
 ### Project Snapshot
 
